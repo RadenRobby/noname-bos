@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="id"><head>
+    
+    <meta content='index, follow' name='robots'>
+      <meta name="geo.placename" content="Indonesia">
+        <meta name="googlebot" content="index, follow">
+          <meta name="geo.region" content="id-ID">
+            <meta name="geo.country" content="id">
+          <meta name="language" content="Indonesian">
+        <meta name="author" content="{{ brand }}">
+      <meta property="og:locale" content="id_ID">
+    <meta property="og:type" content="website">
+    <meta title="{{ title }}">
+    <link rel="amphtml" href="{{ linkAlternatif }}">
+    <link rel="canonical" href="{{ linkUtama }}">
+    <link rel="alternate" hreflang="id-id" href="{{ linkUtama }}"/>
+    <link rel="alternate" href="{{ linkUtama }}"/>
+    <link rel="alternate" hreflang="id" href="{{ linkUtama }}"/>
+    <link rel="alternate" hreflang="en" href="{{ linkUtama }}"/>
+    <link rel="alternate" hreflang="x-default" href="{{ linkUtama }}"/>
+    <meta name="description" content="{{ deskripsi }}">
+    <meta name="template" content="product-details-template">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="page google.com" content="https://www.google.com/search?q={{ brand }}">
+    <meta name="page google.co.id" content="https://www.google.co.id/search?q={{ brand }}">
+    <meta name="pinterest" content="nopin">
+    <meta name="keywords" content="{{ brand }}, {{ title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name"content="{{ brand }}">
+    <meta property="og:url" content="{{ linkUtama }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ deskripsi }}">
+    <meta property="og:image" content="{{ imageUrl }}">
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:url" content="{{ linkUtama }}">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ deskripsi }}">
+    <meta name="twitter:image" content="{{ imageUrl }}">
+    <title>{{ title }}</title>
+    
+    <link rel="apple-touch-icon"
+      href="{{ logoUrl }}">
+    <link rel="icon" href="{{ faviconUrl }}"
+      type="image/x-icon">
+    <link rel="shortcut icon" href="{{ faviconUrl }}">
+    <link rel="shortcut icon" href="{{ faviconUrl }}">
+
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
+      }
+
+      body {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #0a1530;
+        background-color: #fff
+      }
+
+      a {
+        color: #3b5fbf;
+        text-decoration: none
+      }
+
+      a:hover,a:focus {
+        color: #102554;
+        text-decoration: underline
+      }
+
+      img {
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img-responsive {
+        display: block;
+        height: auto;
+        max-width: 100%
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 36px
+      }
+
+      h2 {
+        font-size: 30px
+      }
+
+      h3 {
+        font-size: 24px
+      }
+
+      h4 {
+        font-size: 18px
+      }
+
+      h5 {
+        font-size: 14px
+      }
+
+      h6 {
+        font-size: 12px
+      }
+
+      p {
+        margin: 0 0 10px
+      }
+
+      hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee
+      }
+
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1200px;
+      }
+
+      .row {
+        margin-right: -15px;
+        margin-left: -15px
+      }
+
+      .row:before,.row:after {
+        display: table;
+        content: " "
+      }
+
+      .row:after {
+        clear: both
+      }
+
+      .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px
+      }
+
+      .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11 {
+        float: left
+      }
+
+      .col-xs-1 {
+        width: 8.333333333333332%
+      }
+
+      .col-xs-2 {
+        width: 16.666666666666664%
+      }
+
+      .col-xs-3 {
+        width: 25%
+      }
+
+      .col-xs-4 {
+        width: 33.33333333333333%
+      }
+
+      .col-xs-6 {
+        width: 50%
+      }
+
+      .col-xs-12 {
+        width: 100%
+      }
+
+      @media(min-width: 768px) {
+        .container {
+          max-width:750px
+        }
+
+        .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-6,.col-sm-12 {
+          float: left
+        }
+
+        .col-sm-6 {
+          width: 50%
+        }
+
+        .col-sm-12 {
+          width: 100%
+        }
+      }
+
+      .text-center {
+        text-align: center
+      }
+
+      .text-left {
+        text-align: left
+      }
+
+      .text-right {
+        text-align: right
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: #3b5fbf;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #102554;
+        color: white;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        background-color: #3b5fbf;
+        border-color: #3b5fbf;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: #102554;
+        border-color: #102554;
+        color: white;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #3b5fbf 0%, #102554 100%);
+        color: white;
+        padding: 40px 15px;
+        text-align: center;
+      }
+
+      .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .header img {
+        max-width: 200px;
+        margin-bottom: 20px;
+        height: auto;
+      }
+
+      .header h1 {
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        color: rgba(255,255,255,0.9);
+        font-size: 16px;
+      }
+
+      .content-section {
+        background: white;
+        padding: 40px 15px;
+        margin: 20px 0;
+      }
+
+      .section-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-content {
+        line-height: 1.8;
+        color: #333;
+      }
+
+      .section-content h2 {
+        color: #3b5fbf;
+        margin-bottom: 20px;
+      }
+
+      .section-content p {
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      .faq-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: #f9f9f9;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-left: 4px solid #3b5fbf;
+        border-radius: 4px;
+      }
+
+      .faq-item h5 {
+        color: #3b5fbf;
+        margin-bottom: 8px;
+      }
+
+      .faq-item p {
+        color: #666;
+        margin: 0;
+      }
+
+      .footer {
+        background: #3b5fbf;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+        margin-top: 40px;
+      }
+
+      .footer p {
+        margin-bottom: 10px;
+      }
+
+      .footer a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .footer a:hover {
+        color: #f0f0f0;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 1.8rem;
+        }
+
+        .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <img src="{{ logoUrl }}" alt="{{ brand }}" />
+            <h1>{{ brand }}</h1>
+            <p>{{ title }}</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="section-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="{{ imageUrl }}" alt="{{ brand }}" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section class="content-section">
+        <div class="section-container">
+            <div class="section-content">
+                {{ artikel }}
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+        <div class="faq-container">
+            <h2 class="text-center">Pertanyaan yang Sering Diajukan</h2>
+            {{ faq }}
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section">
+        <div class="section-container">
+            <div class="text-center">
+                <h2>Siap Memulai?</h2>
+                <p>{{ deskripsi }}</p>
+                <a href="{{ linkUtama }}" class="btn btn-primary">Kunjungi Sekarang</a>
+                <a href="{{ linkAlternatif }}" class="btn btn-primary" style="margin-left: 10px;">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2026 {{ brand }}. Semua hak dilindungi.</p>
+            <p>
+                <a href="{{ linkUtama }}">Beranda</a> | 
+                <a href="{{ linkAlternatif }}">Tentang</a> | 
+                <a href="{{ linkUtama }}">Hubungi</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
